@@ -15,12 +15,13 @@ $widthLeftMenu: 80px;
         justify-content: flex-start;
         height: 50px;
         width: 100%;
+        z-index: 1000;
         background-color: $secondary-color;
         padding:0
     }
 
     &-content{
-        min-height: calc(100vh - 55px);
+        min-height: calc(100vh - 95px);
         padding: 25px 0 0 25px;
     }
 
@@ -30,6 +31,10 @@ $widthLeftMenu: 80px;
         scroll-behavior: auto;
         width: 100%;
         left:$widthLeftMenu
+    }
+
+    .ant-layout-sider-children{
+        width: 300;
     }
 }
 
