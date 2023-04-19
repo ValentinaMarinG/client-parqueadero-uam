@@ -1,38 +1,25 @@
-// import './App.scss';
+import logo from './logo.svg';
+import './App.css';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1>Inicialization of the parqueadero UAM 's front-end structure</h1>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-import React from "react";
-import "./App.scss";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import allRoutesProject from "./config/routes";
-
-const App = () => {
+function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        {allRoutesProject.map((route, index) => (
-          <Route
-            key={index}
-            path={route.path}
-            element={
-              <route.layout>
-                <route.component />
-              </route.layout>
-            }
-          ></Route>
-        ))}
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
-};
+}
 
 export default App;
